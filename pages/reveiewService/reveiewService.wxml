@@ -1,0 +1,35 @@
+<view class="big-box bg1">
+	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		内容内容内容内容内容内容内容内容内容内容内容内容内容.
+	</view>
+	<view>
+		<view class="ilblock font11 color3">2019.06.02</view>
+		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
+	</view>
+</view>
+<view class="bg2 he10"></view>
+<view class="reveiew">
+	<view class="color1 font13">
+		<view class="ilblock">
+			星级评价：
+		</view>
+		<view class="ilblock star">
+			<image src="../../image/evaluation-icon.png"></image>
+			<image src="../../image/evaluation-icon.png"></image>
+			<image src="../../image/evaluation-icon.png"></image>
+			<image src="../../image/evaluation-icon.png"></image>
+			<image src="../../image/evaluation-icon.png"></image>
+		</view>
+	</view>
+	<view class="color1 font13" style="margin-top: 50rpx;">
+		<view class="ilblock">评价：</view>
+		<view class="ilblock flo-right" style="width: 80%;height: 390rpx;">
+			<textarea class="bg2 color3 font12" value="请输入进想要评价的内容"></textarea>
+		</view>
+		<view style="clear: both;"></view>
+	</view>
+</view>
+
+<button class="bg7 color5 font15 radiu15">提交</button>

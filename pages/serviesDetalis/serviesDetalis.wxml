@@ -1,0 +1,14 @@
+<view class="top">
+	<view class="top-img ilblock">
+		<image src="../../image/home-img1.png"></image>
+	</view>
+	<view class="top-text ilblock">
+		<view class="font13 color1" style="margin-bottom: 80rpx;">
+			法律咨询
+		</view>
+		<view class="font13 color4" style="margin-bottom: 10rpx;">
+			会员免费
+		</view>
+	</view>
+</view>
+<view class="font12 color3 top-btm">专业律师代写和诉讼和专业律师代写和诉讼和专业律师代写和诉讼和</view>

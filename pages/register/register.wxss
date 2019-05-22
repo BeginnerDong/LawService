@@ -1,0 +1,62 @@
+.info{
+	border-bottom: solid 1rpx #F2F2F2;
+	box-sizing: border-box;
+	padding: 30rpx 5%;
+	position: relative;
+}
+.info-list{
+	background: #F5F5F5;
+	border-radius: 6rpx;
+	float: right;
+	width: 76%;
+	box-sizing: border-box;
+	padding-left: 30rpx;
+	height: 60rpx;
+}
+button{
+	width: 80%;
+	height: 80rpx;
+	margin: 260rpx auto 200rpx;
+}
+.list-left{
+	width: 16%;
+}
+
+.mask{
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	background:rgba(0,0,0,0.5);
+	z-index:9999;
+}
+.rule{
+	width:90%;
+	height:95%;
+	position:absolute;
+	left:5%;
+	top:5%;
+	box-sizing: border-box;
+	padding: 30rpx;
+	line-height: 40rpx;
+}
+.rule_cont{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.rule image{
+	width:30rpx;
+	height:30rpx;
+	position: absolute;
+	top: 0rpx;
+	right: 0rpx;
+	z-index: 100;
+}
+.rule_tlt{
+	width:100%;
+	height:100rpx;
+	line-height: 100rpx;
+	text-align: center;
+}

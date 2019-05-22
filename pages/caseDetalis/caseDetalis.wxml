@@ -1,0 +1,102 @@
+<view class="big-box bg1">
+	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		内容内容内容内容内容内容内容内容内容内容内容内容内容.
+	</view>
+	<view>
+		<view class="ilblock font11 color3">2019.06.02</view>
+		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
+	</view>
+</view>
+<view class="bg2 he10"></view>
+<view class="line">
+	<view class="color1 font15 line-red fat-font ilblock">服务律师</view>
+</view>
+<view class="info">
+	<view class="info-left ilblock">
+		<image src="../../image/case-img.png"></image>
+	</view>
+	<view class="info-right ilblock flo-right">
+		<view class="color1 font14">张胜兰</view>
+		<view class="color2 font12" style="margin-top: 30rpx;">
+			<image src="../../image/case-icon1.png" style="width: 36rpx; height: 28rpx;"></image>
+			执业2年
+		</view>
+		<view class="font11 color2" style="margin-top: 20rpx;">
+			<view class="info-item ilblock">
+				刑事辩护
+			</view>
+			<view class="info-item ilblock">
+				债权债务
+			</view>
+			<view class="info-item ilblock">
+				人身损害
+			</view>
+		</view>
+	</view>
+</view>
+<view class="bg2 he10"></view>
+<view class="line">
+	<view class="color1 font15 line-red fat-font ilblock">案件进度</view>
+</view>
+<view class="list">
+	<view>
+		<view class="ilblock font13 color1 fat-font flo-left">
+			进度状态
+		</view>
+		<view class="ilblock font11 color3 flo-right">
+			2019-04-21
+		</view>
+	</view>
+	<view style="clear: both;"></view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+	<image src="../../image/case-icon2.png"></image>
+</view>
+<view class="list">
+	<view>
+		<view class="ilblock font13 color1 fat-font flo-left">
+			进度状态
+		</view>
+		<view class="ilblock font11 color3 flo-right">
+			2019-04-21
+		</view>
+	</view>
+	<view style="clear: both;"></view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+	<image src="../../image/case-icon2.png"></image>
+</view>
+<view class="list">
+	<view>
+		<view class="ilblock font13 color1 fat-font flo-left">
+			进度状态
+		</view>
+		<view class="ilblock font11 color3 flo-right">
+			2019-04-21
+		</view>
+	</view>
+	<view style="clear: both;"></view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+	<image src="../../image/case-icon2.png"></image>
+</view>
+<view class="list">
+	<view>
+		<view class="ilblock font13 color1 fat-font flo-left">
+			进度状态
+		</view>
+		<view class="ilblock font11 color3 flo-right">
+			2019-04-21
+		</view>
+	</view>
+	<view style="clear: both;"></view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+	<image src="../../image/case-icon2.png"></image>
+</view>

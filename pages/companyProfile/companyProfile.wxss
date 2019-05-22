@@ -1,0 +1,16 @@
+.text{
+	box-sizing: border-box;
+	padding:30rpx;
+	line-height: 38rpx;
+}
+.text view{
+	margin-bottom: 20rpx;
+}
+.img {
+	width: 100%;
+	height: 360rpx;
+}
+.img image{
+	width: 100%;
+	height: 100%;
+}

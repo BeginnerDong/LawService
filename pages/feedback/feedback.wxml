@@ -1,0 +1,20 @@
+<view class="info bg1">
+	<view class="ilblock color1 font14">标题：</view>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入姓名"/>
+</view>
+<view class="info bg1">
+	<view class="ilblock color1 font14">内容：</view>
+	<textarea class="info-list font12 color3 ilblock" value="请输入您想要反馈的内容" 
+	style="box-sizing: border-box;padding: 30rpx; height: 390rpx;">
+		
+	</textarea>
+	<view style="clear: both;"></view>
+</view>
+
+
+
+
+<button class="bg7 color5 font15 radiu15">提交</button>
+
+
+

@@ -1,0 +1,59 @@
+<view class="big-box bg1" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis">
+	<view class="right color8 font11">
+		已解决
+	</view>
+	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		内容内容内容内容内容内容内容内容内容内容内容内容内容.
+	</view>
+	<view>
+		<view class="ilblock font11 color3">2019.06.02</view>
+		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
+	</view>
+	<view class="color1 font12 btm">
+		<button class="bg7 ilblock" style="margin-right:50rpx;" bindtap="show">删除服务</button>
+		<button class="bg7 ilblock" bindtap="intoPath" data-path="/pages/reveiewService/reveiewService">评论服务</button>
+	</view>
+</view>
+<view class="big-box bg1" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis">
+	<view class="right color4 font11">
+		未解决
+	</view>
+	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		内容内容内容内容内容内容内容内容内容内容内容内容内容.
+	</view>
+	<view>
+		<view class="ilblock font11 color3">2019.06.02</view>
+		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
+	</view>
+</view>
+<view class="big-box bg1" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis">
+	<view class="right color4 font11">
+		解决中
+	</view>
+	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
+	<view class="color2 font12 text">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		内容内容内容内容内容内容内容内容内容内容内容内容内容.
+	</view>
+	<view>
+		<view class="ilblock font11 color3">2019.06.02</view>
+		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
+	</view>
+</view>
+
+<view class="fixd" wx:if="{{is_show}}">
+	<view class="bg1 fixd-box radiu15">
+		<view>
+			<image class="flo-right" src="../../image/icon2.png" style="width: 36rpx;height: 36rpx" bindtap="show"></image>
+		</view>
+		<view class="font15 color1" style="text-align: center; margin: 120rpx 0rpx 0rpx;">确认是否删除这个案件</view>
+		<view class="font13">
+			<button class="star">是</button>
+			<button bindtap="show" >否</button>
+		</view>
+	</view>
+</view>

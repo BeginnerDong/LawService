@@ -1,0 +1,16 @@
+<view class="img">
+	<image src="../../image/home-banner.png"></image>
+</view>
+<view class="text">
+	<view class="color2 font13">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+	<view class="color2 font13">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+</view>
+
+
+

@@ -1,0 +1,23 @@
+.list-two{
+	box-sizing: border-box;
+	padding: 40rpx 4%;
+	border-bottom: solid 1rpx #EBEBEB;
+}
+.text{
+	box-sizing: border-box;
+	padding: 40rpx 30rpx;
+	line-height: 36rpx;
+}
+.title{
+	margin-bottom: 40rpx;
+}
+.text-one{
+	text-align: justify;
+	margin-bottom: 50rpx;
+}
+.text-two{
+	text-align: justify;
+	margin-bottom: 40rpx;
+}
+
+

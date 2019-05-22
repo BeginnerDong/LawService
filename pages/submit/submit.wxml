@@ -1,0 +1,56 @@
+<view class="info bg1">
+	<view class="ilblock color1 font14">选择类类型：</view>
+	<view class="ilblock bg2 info-list" style="width:74%;">
+		<view class=" font12 color3 flo-right" style="margin-top: 12rpx;margin-right: 30rpx;">
+			请选择
+			<image src="../../image/arrow-icon1.png" style="width: 12rpx; height: 20rpx;"></image>
+		</view>
+	</view>
+</view>
+<view class="info bg1">
+	<view class="ilblock color1 font14">问题详情</view>
+	<textarea class="info-list font12 color3 ilblock" value="请输入您想要资讯的问题" style="box-sizing: border-box;padding: 30rpx; height: 240rpx;">
+		
+	</textarea>
+	<view style="clear: both;"></view>
+</view>
+
+<view class="info bg1">
+	<view class="ilblock color1 font14">姓名：</view>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入姓名"/>
+</view>
+<view class="info bg1">
+	<view class="ilblock color1 font14">手机号：</view>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入手机号"/>
+</view>
+
+<button class="bg7 color5 font15 radiu15">立即发布</button>
+
+
+<view class="navbar">
+	<view class="navbar_item">
+		<view class="nav_img">
+			<image src="../../image/nabar1.png"></image>
+		</view>
+		<view class="text">首页</view>
+	</view>
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/submit/submit">
+		<view class="nav_img">
+			<image src="../../image/nabar2-a.png"></image>
+		</view>
+		<view class="text this-text">案件提交</view>
+	</view>
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/vip/vip">
+		<view class="nav_img">
+			<image src="../../image/nabar3.png"  style="width: 50rpx;"></image>
+		</view>
+		<view class="text">会员</view>
+	</view>
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/user/user">
+		<view class="nav_img">
+			<image src="../../image/nabar4.png" style="width: 44rpx;"></image>
+		</view>
+		<view class="text">我的</view>
+	</view>
+</view>
+

@@ -1,0 +1,85 @@
+<view class="top bg1">
+	<image src="../../image/about-img1.png" style="width: 100%; height: 240rpx;"></image>
+	<view class="top_top" style="line-height: 100rpx;">
+		<view class="flo-right color5 font12"style="height: 100%; margin-right: 60rpx;"
+		bindtap="intoPath" data-path="/pages/register/register">
+			登录/注册
+		</view>
+	</view>
+	<view class="head radiu50 hiden">
+		<view class="user_img">
+		  <open-data type="userAvatarUrl"></open-data>
+		</view>
+	</view>
+	<view style="line-height: 50rpx;">
+		<view class="color1 font14" style="text-align: center;"><open-data type="userNickName"></open-data></view>
+	</view>
+</view>
+
+<view class="info bg1" bindtap="intoPath" data-path="/pages/myVip/myVip">
+	<view class="ilblock listimg">
+		<image src="../../image/about-icon1.png"></image>
+	</view>
+	<view class="ilblock color1 font13">我的会员</view>
+	<view class="color2 font24 flo-right">
+	 <image src="../../image/arrow-icon1.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
+<view class="info bg1" bindtap="intoPath" data-path="/pages/myOder/myOder">
+	<view class="ilblock listimg">
+		<image src="../../image/about-icon2.png"></image>
+	</view>
+	<view class="ilblock color1 font13">我的订单</view>
+	<view class="color2 font24 flo-right">
+	 <image src="../../image/arrow-icon1.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
+<view class="info bg1" bindtap="intoPath" data-path="/pages/myCase/myCase">
+	<view class="ilblock listimg">
+		<image src="../../image/about-icon3.png"></image>
+	</view>
+	<view class="ilblock color1 font13">我的案件</view>
+	<view class="color2 font24 flo-right">
+	 <image src="../../image/arrow-icon1.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
+<view class="info bg1" bindtap="intoPath" data-path="/pages/feedback/feedback">
+	<view class="ilblock listimg">
+		<image src="../../image/about-icon4.png"></image>
+	</view>
+	<view class="ilblock color1 font13">意见反馈</view>
+	<view class="color2 font24 flo-right">
+	 <image src="../../image/arrow-icon1.png" style="width: 12rpx; height: 21rpx;margin-left: 10rpx;"></image>
+	 </view>
+</view>
+
+<view style="width: 100%; height: 90rpx;"></view>
+
+
+
+<view class="navbar">
+	<view class="navbar_item"  bindtap="intoPathRedirect" data-path="/pages/index/index">
+		<view class="nav_img">
+			<image src="../../image/nabar1.png"></image>
+		</view>
+		<view class="text">首页</view>
+	</view>
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/submit/submit">
+		<view class="nav_img">
+			<image src="../../image/nabar2.png"></image>
+		</view>
+		<view class="text">案件提交</view>
+	</view>
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/vip/vip">
+		<view class="nav_img">
+			<image src="../../image/nabar3.png" style="width: 50rpx;"></image>
+		</view>
+		<view class="text">会员</view>
+	</view>
+	<view class="navbar_item">
+		<view class="nav_img">
+			<image src="../../image/nabar4-a.png" style="width: 44rpx;"></image>
+		</view>
+		<view class="text this-text">我的</view>
+	</view>
+</view>

@@ -1,0 +1,20 @@
+<view class="color1 font14 title">服务说明</view>
+<view class="text">
+	<view class="color2 font13">
+		1、内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+	<view class="color2 font13">
+		2、内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+	<view class="color2 font13">
+		3、内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+	<view class="color2 font13">
+		4、内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</view>
+</view>
+
+<view class="img">
+	<image src="../../image/home-banner.png"></image>
+</view>
+

@@ -1,0 +1,115 @@
+.banner-box{
+	width: 100%;
+	height: 360rpx;
+}
+.banner{
+	width: 100%;
+	height: 100%;
+}
+.banbox{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+.banimg{
+	width: 100%;
+	height: 100%;
+}
+.inform{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30rpx;
+}
+.inform image{
+	width: 32rpx;
+	height:32rpx;
+}
+.inform-text{
+	width: 91%;
+	float: right;
+	margin-top: 6rpx;
+}
+
+
+.circel-nav{
+	width: 25%;
+	text-align: center;
+}
+.circel-nav image{
+	width: 90rpx;
+	height: 90rpx;
+	margin: 50rpx 0rpx 30rpx;
+}
+.he20{
+	width: 100%;
+	height: 20rpx;
+}
+.he10{
+	width: 100%;
+	height: 10rpx;
+}
+.line-img{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40rpx 30rpx 30rpx;
+}
+.line-img image{
+	width: 32rpx;
+	height: 32rpx;
+	margin-right: 20rpx;
+}
+.serve-box{
+	width: 100%;
+}
+.serve{
+	width: 43.6%;
+	padding-bottom: 40rpx;
+	margin-left:30rpx;
+}
+.serve-img{
+	width: 100%;
+	height: 210rpx;
+}
+.serve-img image{
+	width: 100%;
+	height: 100%;
+}
+.top-two{
+	width: 100%;
+	padding-top: 30rpx;
+}
+.top-item{
+	width: 50%;
+	text-align: center;
+	line-height: 90rpx;
+	color: rgb(33,33,33);
+	box-sizing: border-box;
+	height:84rpx ;
+}
+.top-item view{
+	height: 100%;
+	display: inline-block;
+	height:84rpx ;
+}
+.top-itemstar view{
+	color: #00A1E9;
+	border-bottom: solid 6rpx #00A1E9;
+}
+.list-two{
+	box-sizing: border-box;
+	padding: 40rpx 4%;
+	border-bottom: solid 1rpx #EBEBEB;
+}
+.list-left{
+	width: 67%;
+	height: 140rpx;
+}
+.list-two .flo-right{
+	width: 30%;
+	height: 140rpx;
+}
+.list-two .flo-right image{
+	width: 100%;
+	height: 100%;
+}

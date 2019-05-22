@@ -1,0 +1,70 @@
+<view class="info bg1">
+	<view class="ilblock color1 font14">姓名：</view>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入姓名"/>
+</view>
+<view class="info bg1">
+	<view class="ilblock color1 font14">手机号：</view>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入绑定的手机号"/>
+</view>
+<view class="info bg1">
+	<view class="ilblock color1 font14">验证码：</view>
+	<view class="info-list">
+		<input class="font12 color3 ilblock " placeholder="请输入验证码"/>
+		<button class="font12 flo-right bg7" style="width: 158rpx; height: 60rpx;border-radius: 0rpx;margin: 0rpx;border: none; ">
+			获取验证码
+		</button>
+	</view>
+</view>
+<view class="info bg1">
+	<view class="ilblock color1 font14 list-left">推荐人手机号:</view>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入推荐人的手机号(选填)"/>
+</view>
+
+<button class="bg7 color5 font15 radiu15">确定</button>
+<view class="font12 color2" style="text-align: center;" bindtap="show">点击“确认”即表示您同意《注册协议》</view>
+
+<view class="mask" wx:if="{{is_show}}">
+    <view class="rule bg1" style="height: 90%;">
+        <scroll-view scroll-y style="height:70vh;">
+			<view>
+				<image src="../../image/icon2.png" bindtap="show"></image>
+			</view>
+            <view class="rule_cont font12 color2">
+                <view class="font15 color2 fat-font rule_tlt">标题标题标题</view>
+				<view class=" content w690">1.内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容</view>
+				<view class=" content w690">2.内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容</view>
+				 <view class="content w690">3.内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容</view>
+			</view>
+        </scroll-view>
+    </view>
+</view>
+
+
+
+<view class="navbar">
+	<view class="navbar_item">
+		<view class="nav_img">
+			<image src="../../image/nabar1.png"></image>
+		</view>
+		<view class="text">首页</view>
+	</view>
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/submit/submit">
+		<view class="nav_img">
+			<image src="../../image/nabar2-a.png"></image>
+		</view>
+		<view class="text this-text">案件提交</view>
+	</view>
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/vip/vip">
+		<view class="nav_img">
+			<image src="../../image/nabar3.png"  style="width: 50rpx;"></image>
+		</view>
+		<view class="text">会员</view>
+	</view>
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/user/user">
+		<view class="nav_img">
+			<image src="../../image/nabar4.png" style="width: 44rpx;"></image>
+		</view>
+		<view class="text">我的</view>
+	</view>
+</view>
+

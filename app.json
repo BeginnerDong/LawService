@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+		"pages/submit/submit",
+		"pages/vip/vip",
+		"pages/user/user",
+		"pages/register/register",
+		"pages/myVip/myVip",
+		"pages/myOder/myOder",
+		"pages/myCase/myCase",
+		"pages/reveiewService/reveiewService",
+		"pages/caseDetalis/caseDetalis",
+		"pages/feedback/feedback",
+		"pages/attorney/attorney",
+		"pages/attorneyDetalis/attorneyDetalis",
+		"pages/phoneCounseling/phoneCounseling",
+		"pages/agency/agency",
+		"pages/companyProfile/companyProfile",
+		"pages/dengarAgency/dengarAgency",
+		"pages/contactUs/contactUs",
+		"pages/consultDetalis/consultDetalis",
+		"pages/characteristicService/characteristicService",
+		"pages/serviesDetalis/serviesDetalis"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#00A1E9",
+    "navigationBarTitleText": "首页",
+		"navigationBarTextStyle":"#fff"
+  }
+}

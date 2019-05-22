@@ -1,0 +1,75 @@
+
+.big-box{
+	box-sizing: border-box;
+	padding: 40rpx 30rpx;
+	width: 100%;
+}
+
+.text{
+	text-align: justify;
+	line-height: 36rpx;
+	margin: 30rpx 0rpx;
+}
+.other{
+	width: 120rpx;
+	height: 36rpx;
+	border: solid 1rpx #00A1E9;
+	text-align: center;
+	line-height: 36rpx;
+	margin-left: 40rpx;
+}
+.he10{
+	width: 100%;
+	height: 10rpx;
+}
+.line{
+	box-sizing: border-box;
+	padding: 40rpx 4%;
+}
+.line-red{
+	border-left: solid 6rpx #2E82FF;
+	text-indent: 20rpx;
+}
+.info{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0rpx 30rpx 20px;
+}
+.info-left{
+	width: 18.5%;
+	height:166rpx;
+}
+.info-left image{
+	width: 100%;
+	height:100%;
+}
+.info-right{
+	height: 166rpx;
+	width: 77%;
+}
+.info-item{
+	width:110rpx;
+	height: 40rpx;
+	border: solid 1rpx #E7E7E7;
+	text-align: center;
+	line-height: 40rpx;
+	margin-right: 20rpx;
+}
+
+.list{
+	border-left: solid 1rpx #00A1E9;
+	box-sizing: border-box;
+	width: 91%;
+	padding:0rpx 30rpx 50rpx;
+	margin: 0rpx 5%;
+	position: relative;
+}
+.list image{
+	width: 28rpx;
+	height:28rpx;
+	position: absolute;
+	left: -15rpx;
+	top: -3rpx;
+}
+
+

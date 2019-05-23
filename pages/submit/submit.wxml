@@ -28,13 +28,13 @@
 
 
 <view class="navbar">
-	<view class="navbar_item">
+	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/index/index">
 		<view class="nav_img">
 			<image src="../../image/nabar1.png"></image>
 		</view>
 		<view class="text">首页</view>
 	</view>
-	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/submit/submit">
+	<view class="navbar_item">
 		<view class="nav_img">
 			<image src="../../image/nabar2-a.png"></image>
 		</view>

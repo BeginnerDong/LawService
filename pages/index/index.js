@@ -23,8 +23,26 @@ Page({
 			'../../image/home-banner.png',
 		 	'../../image/home-banner.png'
 		 ],
+		currentData : 0
+    },
+    bindchange:function(e){
+     const self  = this;
+     self.setData({
+       currentData: e.detail.current
+     })
    },
-		
+   //点击切换，滑块index赋值
+   checkCurrent:function(e){
+     const self = this;
+     if (self.data.currentData === e.currentTarget.dataset.current){
+         return false;
+     }else{
+   
+       self.setData({
+         currentData: e.currentTarget.dataset.current
+       })
+     }
+   },
 	show(e){
 		const self=this;
 		self.data.is_show=false;
@@ -36,11 +54,11 @@ Page({
 	onLoad: function (options) {
 		
 	},
-	 swiperChange(e) {
+	 /* swiperChange(e) {
     this.setData({
       swiperIndex: e.detail.current
     })
-  },
+  }, */
 	
   intoPathRedirect(e){
     const self = this;

@@ -1,0 +1,12 @@
+<view class="top bg1">
+	<image src="../../image/contact-img1.png"></image>
+</view>
+
+<view class="list bg1">
+	<view class="ilblock color1 font14">电话：029-45687865</view>
+	<image class="flo-right" src="../../image/call-icon1.png"></image>
+</view>
+<view class="list bg1">
+	<view class="ilblock color1 font14">地址：陕西省西安市雁塔区高新大都荟</view>
+	<image class="flo-right" src="../../image/contact-icon1.png" style="width: 38rpx;"></image>
+</view>

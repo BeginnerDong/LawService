@@ -34,7 +34,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 113,
+			"current": 116,
 			"list": [
 				{
 					"id": -1,
@@ -717,7 +717,25 @@
 				{
 					"id": -1,
 					"name": "服务详情",
-					"pathName": "pages/serviesDetalis/serviesDetalis"
+					"pathName": "pages/serviesDetalis/serviesDetalis",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "律师咨询",
+					"pathName": "pages/serviesDetalis/serviesDetalis",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "立即下单",
+					"pathName": "pages/placeOrder/placeOrder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "会员",
+					"pathName": "pages/vip/vip"
 				}
 			]
 		}

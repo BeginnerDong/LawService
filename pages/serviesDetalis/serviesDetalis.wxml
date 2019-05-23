@@ -11,4 +11,81 @@
 		</view>
 	</view>
 </view>
-<view class="font12 color3 top-btm">专业律师代写和诉讼和专业律师代写和诉讼和专业律师代写和诉讼和</view>
+<view class="font12 color3 top-btm">专业律师代写和诉讼和专业律师代写和诉讼和专业律师代写和诉讼和代写和诉讼和</view>
+<view class="bg2 he10"></view>
+<view class="line">
+	<view class="color1 font15 line-red fat-font ilblock">服务项目</view>
+</view>
+<view class="middle-box">
+	<view class="middle">
+		<view class="color2 font11">不涉及财产关系100元/小时；(不足1小时按一小时计算)</view>
+		<view class="color4 font13" style="margin-top: 12rpx;">￥56.00</view>
+		<image src="../../image/service-icon.png"></image>
+	</view>
+	<view class="middle">
+		<view class="color2 font11">不涉及财产关系100元/小时；(不足1小时按一小时计算)</view>
+		<view class="color4 font13" style="margin-top: 12rpx;">￥56.00</view>
+		<image src="../../image/service-icon1.png"></image>
+	</view>
+</view>
+<view class="bg2 he10"></view>
+<view class="line2">
+	<view class="color1 font15 line-red fat-font ilblock">服务详情</view>
+	<view class="vip-box">
+		<view class="vip-img">
+			<image src="../../image/service-icon2.png" bindtap="intoPath" data-path="/pages/vip/vip"></image>
+		</view>
+		<view class="font13 color2">会员免费</view>
+	</view>
+</view>
+<view class="text">
+	<view class="title-one font14 color8 fat-font">
+		律师提醒：
+	</view>
+	<view class="text-one font12 color2">
+		一份经过专业律师起草审核的文书可以最大限度的避免各种隐藏法律风险，极大维护您的合法权益。
+	</view>
+	<view class="text-one font12 color2">
+		一份经过专业律师起草审核的文书可以最大限度的避免各种隐藏法律风险，极大维护您的合法权益。
+	</view>
+	<view class="title-two font14 color1 fat-font">
+		服务流程：
+	</view>
+	<view class="text-one font12 color2">
+		1.一份经过专业律师起草审核的文书可以最大限度的避免各种隐藏法律风险，极大维护您的合法权益。
+	</view>
+	<view class="title-two font14 color1 fat-font">
+		服务内容：
+	</view>
+	<view class="text-one font12 color2">
+		1.一份经过专业律师起草审核的文
+	</view>
+	<view class="text-one font12 color2">
+		2.一份经过专业律师起草审核的文书可以最大限度的避免各种隐藏法律风险，极大维护您的合法权益。
+	</view>
+	<view class="text-one font12 color2">
+		3.提示合同风险及旅行建议
+	</view>
+	<view class="title-two font14 color1 fat-font">
+		售后服务：
+	</view>
+	<view class="text-one font12 color2">
+		3天不限次数修改服务，满意为止。
+	</view>
+	<view class="title-two font14 color1 fat-font">
+		为什么要找律师写文书？
+	</view>
+	<view class="text-one font12 color2">
+		更合规：避免风险保证合同合法合规；
+	</view>
+	<view class="text-one font12 color2">
+		更有利：设身处地，设置对您有利的条款；
+	</view>
+	<view class="text-one font12 color2">
+		更安心：详细讲解合同条款，让您做到心中有数；
+	</view>
+</view>
+<view class="btm bg1">
+	<view class="font14 color4 ilblock" style="margin-top: 32rpx; margin-right: 30rpx;">总金额：￥56.00</view>
+	<button class="bg7 olor5 font14 ilblock flo-right" bindtap="intoPath" data-path="/pages/placeOrder/placeOrder">立即下单</button>
+</view>

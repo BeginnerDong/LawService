@@ -1,21 +1,21 @@
 <view class="top-two bg1">
-	 <view class="top-item ilblock top-itemstar">
+	 <view class="top-item ilblock {{currentData == 0 ? 'top-itemstar' : ''}}"  data-current = "0" bindtap="checkCurrent" >
 		 <view class="font15">
 			 未支付
 		 </view>
 	 </view>
-	 <view class="top-item ilblock">
+	 <view class="top-item ilblock {{currentData == 1 ? 'top-itemstar' : ''}}"  data-current = "1" bindtap="checkCurrent" >
 		 <view class="font15">
 			 已支付
 		 </view>
 	 </view>
-	 <view class="top-item ilblock">
+	 <view class="top-item ilblock {{currentData == 2 ? 'top-itemstar' : ''}}"  data-current = "2" bindtap="checkCurrent" >
 	 		 <view class="font15">
 	 			 已完成
 	 		 </view>
 	 </view>
  </view>
- <view class="big-box bg1">
+ <view class="big-box bg1" wx:for="{{currentData}}" bindchange="bindchange">
 	<view class="box-top">
 		<view class="ilblock top-left">
 			<image src="../../image/home-img1.png"></image>

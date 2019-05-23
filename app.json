@@ -20,7 +20,8 @@
 		"pages/contactUs/contactUs",
 		"pages/consultDetalis/consultDetalis",
 		"pages/characteristicService/characteristicService",
-		"pages/serviesDetalis/serviesDetalis"
+		"pages/serviesDetalis/serviesDetalis",
+		"pages/placeOrder/placeOrder"
   ],
   "window":{
     "backgroundTextStyle":"light",

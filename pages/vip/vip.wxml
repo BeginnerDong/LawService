@@ -1,5 +1,11 @@
 <view class="banner">
-	
+	<swiper bindchange="bindhange" current="{{web_current}}" class="banbox" autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}">
+		<block class="swipera" wx:for="{{arr}}">
+			<swiper-item>
+				<image src="{{item}}" mode="widthFix" class="banimg {{swiperIndex == index ? 'active' : ''}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
 </view>
 
 <view style="box-sizing: border-box;padding: 0rpx 4%; text-align: justify;">

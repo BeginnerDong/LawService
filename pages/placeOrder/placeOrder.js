@@ -10,18 +10,8 @@ const token = new Token();
 
 Page({
   data: {
-		 is_show:false,
-		 autoplay:false,
-		 duration:1000,
-		 circular:true,
-		 vertical:false,
-		 interval:3000,
-		 arr:[
-		 	'../../image/members-imgt.png',
-		 	'../../image/members-imgt.png',
-		 	'../../image/members-imgt.png',
-		 ],
-		 swiperIndex:0
+		 is_show:true
+		 
    },
 		
 	show(e){
@@ -33,11 +23,6 @@ Page({
 	},
 	onLoad: function (options) {
 	},
-	 swiperChange(e) {
-    this.setData({
-      swiperIndex: e.detail.current
-    })
-  },
 	
   intoPathRedirect(e){
     const self = this;

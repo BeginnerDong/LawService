@@ -1,0 +1,79 @@
+.top{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 50rpx 5%;
+}
+.img-box{
+	width: 44rpx;
+	height: 50rpx;
+}
+.img-box image{
+	width: 100%;
+	height: 100%;
+}
+.inline{
+	height: 1rpx;
+	width:24%;
+	margin: 0rpx 30rpx 20rpx;
+	border-top: dashed 4rpx #00A1E9;
+}
+.text-box{
+	width: 33.3%;
+	box-sizing: border-box;
+	padding-left: 2.4%;
+}
+
+
+.info{
+	border-bottom: solid 1rpx #F2F2F2;
+	box-sizing: border-box;
+	padding: 30rpx 5%;
+	position: relative;
+}
+.info-list{
+	background: #F5F5F5;
+	border-radius: 6rpx;
+	float: right;
+	width: 76%;
+	box-sizing: border-box;
+	padding-left: 30rpx;
+	height: 60rpx;
+}
+.he10{
+	width: 100%;
+	height: 10rpx;
+}
+.line{
+	box-sizing: border-box;
+	padding: 40rpx 4% 30rpx;
+}
+.line-red{
+	border-left: solid 6rpx #2E82FF;
+	text-indent: 20rpx;
+}
+.middle{
+	width: 100%;
+	height: 122rpx;
+	border: solid 1rpx #EAEAEA;
+	background: #F9F9F9;
+	box-sizing: border-box;
+	padding:20rpx 30rpx;
+}
+.middle-box{
+	width: 100%;
+	box-sizing: border-box;
+	padding:0rpx 4% 40rpx;
+}
+.btm{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10rpx 4% 20rpx;
+	position: fixed;
+	border-top: solid 1rpx #F4F4F4;
+	bottom: 0rpx;
+	text-align: right;
+}
+.btm button{
+	width: 30%;
+	height: 70rpx;
+}

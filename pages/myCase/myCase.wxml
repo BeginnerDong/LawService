@@ -8,8 +8,7 @@
 		内容内容内容内容内容内容内容内容内容内容内容内容内容.
 	</view>
 	<view>
-		<view class="ilblock font11 color3">2019.06.02</view>
-		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
+		<view class="font11 color3">2019.06.02</view>
 	</view>
 	<view class="color1 font12 btm">
 		<button class="bg7 ilblock" style="margin-right:50rpx;" bindtap="show">删除服务</button>
@@ -26,8 +25,7 @@
 		内容内容内容内容内容内容内容内容内容内容内容内容内容.
 	</view>
 	<view>
-		<view class="ilblock font11 color3">2019.06.02</view>
-		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
+		<view class="font11 color3">2019.06.02</view>
 	</view>
 </view>
 <view class="big-box bg1" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis">
@@ -40,8 +38,7 @@
 		内容内容内容内容内容内容内容内容内容内容内容内容内容.
 	</view>
 	<view>
-		<view class="ilblock font11 color3">2019.06.02</view>
-		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
+		<view class="font11 color3">2019.06.02</view>
 	</view>
 </view>
 

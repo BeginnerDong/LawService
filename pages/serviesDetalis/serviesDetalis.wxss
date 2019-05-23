@@ -21,3 +21,91 @@
 	text-align: justify;
 	line-height: 36rpx;
 }
+.he10{
+	width: 100%;
+	height: 10rpx;
+}
+.line{
+	box-sizing: border-box;
+	padding: 40rpx 4% 20rpx;
+}
+.line-red{
+	border-left: solid 6rpx #2E82FF;
+	text-indent: 20rpx;
+}
+.middle{
+	width: 100%;
+	height: 122rpx;
+	border: solid 1rpx #EAEAEA;
+	background: #F9F9F9;
+	box-sizing: border-box;
+	padding:20rpx 30rpx;
+	margin-top: 30rpx;
+	position: relative;
+}
+.middle-box{
+	width: 100%;
+	box-sizing: border-box;
+	padding:0rpx 4% 40rpx;
+}
+.middle image{
+	width: 36rpx;
+	height: 36rpx;
+	position: absolute;
+	top: 40rpx;
+	right: 5%;
+}
+.line2{
+	box-sizing: border-box;
+	width: 92%;
+	margin: 40rpx 4%;
+	padding-bottom: 30rpx;
+	border-bottom: solid 1rpx #EAEAEA;
+	position: relative;
+}
+.vip-box{
+	width:120rpx;
+	position: absolute;
+	right: 0rpx;
+	text-align: center;
+	top: 0rpx;
+}
+.vip-img{
+	height: 80rpx;
+	text-align: center;
+	margin-bottom: 10rpx;
+}
+.vip-img image {
+	width: 80rpx;
+	height: 80rpx;
+}
+.text{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0rpx 4% 120rpx;
+	line-height: 40rpx;
+	text-align: justify;
+}
+.title-one{
+	margin-bottom: 30rpx;
+}
+.text-one{
+	margin-bottom: 30rpx;
+}
+.title-two{
+	margin-bottom: 20rpx;
+	margin-bottom: 34rpx;
+}
+.btm{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10rpx 4% 20rpx;
+	position: fixed;
+	border-top: solid 1rpx #F4F4F4;
+	bottom: 0rpx;
+	text-align: right;
+}
+.btm button{
+	width: 30%;
+	height: 70rpx;
+}

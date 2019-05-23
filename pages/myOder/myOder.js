@@ -11,21 +11,38 @@ const token = new Token();
 Page({
   data: {
 		 is_show:false,
-		 imgUrls: [
-		   '../../image/banner.png',
-		   '../../image/banner.png',
-		   '../../image/banner.png'
-		 ],
-		 swiperIndex: 0
+		 currentData : 0
    },
-		
+	 bindchange:function(e){
+    const self  = this;
+    self.setData({
+      currentData: e.detail.current
+    })
+  },
+  //点击切换，滑块index赋值
+  checkCurrent:function(e){
+    const self = this;
+		console.log(e)
+    if (self.data.currentData === e.currentTarget.dataset.current){
+        return false;
+    }else{
+
+      self.setData({
+        currentData: e.currentTarget.dataset.current
+      })
+    }
+  },
+
 	show(e){
 		const self=this;
 		self.data.is_show=false;
+		self.data.mainData = [];
 		self.setData({
-			is_show:self.data.is_show
+			is_show:self.data.is_show,
+			 web_mainData:self.data.mainData
 		})
 	},
+	
 	onLoad: function (options) {
 	},
 	 swiperChange(e) {

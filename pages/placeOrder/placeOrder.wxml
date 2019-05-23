@@ -1,0 +1,53 @@
+<view class="top">
+	<view>
+		<view class="img-box ilblock" style="margin-left: 7%;">
+			<image src="../../image/order-icon1.png"></image>
+		</view>
+		<view class="inline ilblock"></view>
+		<view class="img-box ilblock">
+			<image src="../../image/order-icon2.png"></image>
+		</view>
+		<view class="inline ilblock"></view>
+		<view class="img-box ilblock">
+			<image src="../../image/order-icon3.png"></image>
+		</view>
+	</view>
+	<view class="color1 font13" style="margin-top: 20rpx;">
+		<view class="text-box ilblock">提交订单</view>
+		<view class="text-box ilblock" style="padding-left: 8%;">支付金额</view>
+		<view class="text-box ilblock" style="text-align: right;">律师回电服务</view>
+	</view>
+</view>
+<view class="bg2 he10"></view>
+<view class="line">
+	<view class="color1 font15 line-red fat-font ilblock">服务项目</view>
+</view>
+<view class="middle-box">
+	<view class="middle">
+		<view class="color2 font11">不涉及财产关系100元/小时；(不足1小时按一小时计算)</view>
+		<view class="color4 font13" style="margin-top: 12rpx;">￥56.00</view>
+	</view>
+</view>
+<view class="bg2 he10"></view>
+<view class="info bg1">
+	<view class="ilblock color1 font14">个人姓名：</view>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入姓名"/>
+</view>
+<view class="info bg1">
+	<view class="ilblock color1 font14">问题详情：</view>
+	<textarea class="info-list font12 color3 ilblock" value="请输入您想要资讯的问题" style="box-sizing: border-box;padding: 30rpx; height: 240rpx;">
+		
+	</textarea>
+	<view style="clear: both;"></view>
+</view>
+<view class="btm bg1">
+	<view class="font14 color4 ilblock" style="margin-top: 32rpx; margin-right: 30rpx;">总金额：￥56.00</view>
+	<button class="bg7 olor5 font14 ilblock flo-right">立即下单</button>
+</view>
+
+
+
+
+
+
+

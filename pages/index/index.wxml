@@ -1,6 +1,6 @@
 <view class="banner-box">
 	<view class="banner">
-		<swiper bindchange="bindhange" indicator-dots="true" indicator-active-color="#F6FAFB" current="{{web_current}}" class="banbox" autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}">
+		<swiper indicator-dots="true" indicator-active-color="#F6FAFB" current="{{web_current}}" class="banbox" autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}">
 			<block class="swipera" wx:for="{{arr}}">
 				<swiper-item>
 					<image src="{{item}}" mode="widthFix" class="banimg"></image>
@@ -97,11 +97,11 @@
 </view>
 <view class="bg2 he10"></view>
 <view class="top-two bg1">
-	 <view class="top-item ilblock top-itemstar">
+	 <view class="top-item ilblock {{currentData == 0 ? 'top-itemstar' : ''}}"  data-current = "0" bindtap="checkCurrent">
 		 <view class="font15">
 			 招生快讯
 		 </view>
-	 </view><view class="top-item ilblock">
+	 </view><view class="top-item ilblock {{currentData == 1 ? 'top-itemstar' : ''}}"  data-current = "1" bindtap="checkCurrent">
 		 <view class="font15">
 			 招生章程
 		 </view>

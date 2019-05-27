@@ -7,17 +7,21 @@
 </view>
 
 <view class="info bg1">
-	<view class="ilblock color1 font14">选择类类型：</view>
-	<view class="ilblock bg2 info-list" style="width:74%;">
-		<view class=" font12 color3 flo-right" style="margin-top: 12rpx;margin-right: 30rpx;">
-			请选择
-			<image src="../../image/arrow-icon1.png" style="width: 12rpx; height: 20rpx;"></image>
-		</view>
+	<view class="ilblock color1 font14">选择类型：</view>
+	<view class="ilblock bg2 info-list" style="width:76%;">
+		<picker bindchange="PositionChange" value="{{index}}"  range="{{web_positionData}}" range-key ="title">
+			<view class=" font12 color3 flo-right" style="margin-top: 12rpx;margin-right: 30rpx;">
+				{{web_positionData[web_index].title?web_positionData[web_index].title:'请选择'}}
+				<image src="../../image/arrow-icon1.png" style="width: 12rpx; height: 20rpx;"></image>
+			</view>
+		</picker>
+		
 	</view>
 </view>
 <view class="info bg1">
 	<view class="ilblock color1 font14">问题详情</view>
-	<textarea class="info-list font12 color3 ilblock" value="请输入您想要资讯的问题" style="box-sizing: border-box;padding: 30rpx; height: 240rpx;">
+	<textarea class="info-list font12 color3 ilblock" placeholder="请输入您想要资讯的问题" style="box-sizing: border-box;padding: 30rpx; height: 240rpx;"
+	data-key="content" bindblur="changeBind" value="{{web_submitData.content}}">
 		
 	</textarea>
 	<view style="clear: both;"></view>
@@ -25,14 +29,14 @@
 
 <view class="info bg1">
 	<view class="ilblock color1 font14">姓名：</view>
-	<input class="font12 color3 ilblock info-list" placeholder="请输入姓名"/>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入姓名" data-key="keywords" bindblur="changeBind" value="{{web_submitData.keywords}}"/>
 </view>
 <view class="info bg1">
 	<view class="ilblock color1 font14">手机号：</view>
-	<input class="font12 color3 ilblock info-list" placeholder="请输入手机号"/>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入手机号" data-key="phone" bindblur="changeBind" value="{{web_submitData.phone}}"/>
 </view>
 
-<button class="bg7 color5 font15 radiu15">立即发布</button>
+<button class="bg7 color5 font15 radiu15" open-type="getUserInfo" bindgetuserinfo="{{web_buttonCanClick?'submit':''}}">立即发布</button>
 
 
 

@@ -1,32 +1,38 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-		"pages/submit/submit",
-		"pages/vip/vip",
-		"pages/user/user",
-		"pages/register/register",
-		"pages/myVip/myVip",
-		"pages/myOder/myOder",
-		"pages/myCase/myCase",
-		"pages/reveiewService/reveiewService",
-		"pages/caseDetalis/caseDetalis",
-		"pages/feedback/feedback",
-		"pages/attorney/attorney",
-		"pages/attorneyDetalis/attorneyDetalis",
-		"pages/phoneCounseling/phoneCounseling",
-		"pages/agency/agency",
-		"pages/companyProfile/companyProfile",
-		"pages/dengarAgency/dengarAgency",
-		"pages/contactUs/contactUs",
-		"pages/consultDetalis/consultDetalis",
-		"pages/characteristicService/characteristicService",
-		"pages/serviesDetalis/serviesDetalis",
-		"pages/placeOrder/placeOrder"
+    "pages/submit/submit",
+    "pages/vip/vip",
+    "pages/user/user",
+    "pages/register/register",
+    "pages/myVip/myVip",
+    "pages/myOder/myOder",
+    "pages/myCase/myCase",
+    "pages/reveiewService/reveiewService",
+    "pages/caseDetalis/caseDetalis",
+    "pages/feedback/feedback",
+    "pages/attorney/attorney",
+    "pages/attorneyDetalis/attorneyDetalis",
+    "pages/phoneCounseling/phoneCounseling",
+    "pages/agency/agency",
+    "pages/companyProfile/companyProfile",
+    "pages/dengarAgency/dengarAgency",
+    "pages/contactUs/contactUs",
+    "pages/consultDetalis/consultDetalis",
+    "pages/characteristicService/characteristicService",
+    "pages/serviesDetalis/serviesDetalis",
+    "pages/placeOrder/placeOrder"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor":"#00A1E9",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00A1E9",
     "navigationBarTitleText": "首页",
-		"navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+	 "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
 }

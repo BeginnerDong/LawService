@@ -1,3 +1,4 @@
+@import "../../wxParse/wxParse.wxss"
 .title{
 	text-align: center;
 	box-sizing: border-box;

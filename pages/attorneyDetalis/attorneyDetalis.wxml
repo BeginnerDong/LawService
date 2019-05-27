@@ -1,23 +1,19 @@
 <view class="info">
 	<view class="info-left ilblock">
-		<image src="../../image/case-img.png"></image>
+		<image src="{{web_mainData.mainImg[0].url}}"></image>
 	</view>
 	<view class="info-right ilblock flo-right">
-		<view class="color1 font14 fat-font">张胜兰</view>
+		<view class="color1 font14 fat-font">{{web_mainData.title}}</view>
 		<view class="color2 font12" style="margin-top: 30rpx;">
 			<image src="../../image/case-icon1.png" style="width: 36rpx; height: 28rpx;"></image>
-			执业2年
+			执业{{web_mainData.small_title}}年
 		</view>
 		<view class="font11 color2" style="margin-top: 20rpx;">
-			<view class="info-item ilblock">
-				刑事辩护
-			</view>
-			<view class="info-item ilblock">
-				债权债务
-			</view>
-			<view class="info-item ilblock">
-				人身损害
-			</view>
+			<block wx:for="{{web_mainData.keywords}}">
+				<view class="info-item ilblock">
+					{{item}}
+				</view>
+			</block>
 		</view>
 	</view>
 </view>
@@ -26,45 +22,29 @@
 	<view class="color1 font15 line-red fat-font ilblock">简介</view>
 </view>
 <view class="text font12 color2">
-	内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	{{web_mainData.description}}
 </view>
 <view class="bg2 he10"></view>
 <view class="line">
 	<view class="color1 font15 line-red fat-font ilblock">口碑评价</view>
 </view>
-<view class="boxleft">
-	<view>
-		<view class="head-two ilblock" bindtap="show">
-			<image src="../../image/about-img2.png"></image>
+
+<block wx:for="{{web_messageData}}">
+	<view class="boxleft">
+		<view>
+			<view class="head-two ilblock" bindtap="show">
+				<image src="{{item.description}}"></image>
+			</view>
+			<view class="font11 color2 ilblock name overflow1">{{item.keywords}}</view>
+			<view class="font9 color3 ilblock flo-right" style="margin-top: 12rpx;">{{item.create_time}}</view>
 		</view>
-		<view class="font11 color2 ilblock name overflow1">昵称昵称</view>
-		<view class="font9 color3 ilblock flo-right" style="margin-top: 12rpx;">2019.02.23 15:09</view>
+		<view class="color2 font12 overflow3" style="line-height: 36rpx;">{{item.content}}</view>
 	</view>
-	<view class="color2 font12 overflow3" style="line-height: 36rpx;">内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容容内容内容内
-	内容内容内容内容内容内容内容内容容内容容内容内容内容内容容内容</view>
-</view>
-<view class="boxleft">
-	<view>
-		<view class="head-two ilblock" bindtap="show">
-			<image src="../../image/about-img2.png"></image>
-		</view>
-		<view class="font11 color2 ilblock name overflow1">昵称昵称</view>
-		<view class="font9 color3 ilblock flo-right" style="margin-top: 12rpx;">2019.02.23 15:09</view>
-	</view>
-	<view class="color2 font12 overflow3" style="line-height: 36rpx;">内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容容内容内容内
-	内容内容内容内容内容内容内容内容容内容容内容内容内容内容容内容</view>
-</view>
-<view class="boxleft">
-	<view>
-		<view class="head-two ilblock" bindtap="show">
-			<image src="../../image/about-img2.png"></image>
-		</view>
-		<view class="font11 color2 ilblock name overflow1">昵称昵称</view>
-		<view class="font9 color3 ilblock flo-right" style="margin-top: 12rpx;">2019.02.23 15:09</view>
-	</view>
-	<view class="color2 font12 overflow3" style="line-height: 36rpx;">内容内容内容内容内容内容内容内容内容内容内容内容内容内容容内容内容内容内容容内容内容内
-	内容内容内容内容内容内容内容内容容内容容内容内容内容内容容内容</view>
-</view>
-<view class="font12 color2" style="text-align: center; padding: 30rpx 0rpx;">
-	 加载更多<image src="../../image/lawyer-icon.png" style="width: 20rpx;height: 12rpx;margin-left:20rpx;position: relative;top: -4rpx;"></image>
+</block>
+
+<view class="font12 color2" style="text-align: center; padding: 200rpx 0rpx;" wx:if="{{web_messageData.length==0}}">
+	 还没有人评价过~
  </view>
+<!-- <view class="font12 color2" style="text-align: center; padding: 30rpx 0rpx;">
+	 加载更多<image src="../../image/lawyer-icon.png" style="width: 20rpx;height: 12rpx;margin-left:20rpx;position: relative;top: -4rpx;"></image>
+ </view> -->

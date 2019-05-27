@@ -1,17 +1,11 @@
-<view class="box" bindtap="intoPath" data-path="/pages/serviesDetalis/serviesDetalis">
-	<image src="../../image/home-img1.png"></image>
-	<view class="box-btm">
-		<view class="color5 font13 ilblock">法律咨询</view>
-		<view class="font13 ilblock color4 flo-right">会员免费</view>
+<block wx:for="{{web_mainData}}" wx:key="id">
+	<view class="box" bindtap="intoPath" data-path="/pages/serviesDetalis/serviesDetalis?id={{item.id}}">
+		<image src="{{item.mainImg[0].url}}"></image>
+		<view class="box-btm">
+			<view class="color5 font13 ilblock">{{item.title}}</view>
+			<view class="font13 ilblock color4 flo-right">会员免费</view>
+		</view>
 	</view>
-</view>
+</block>
 
-<view class="box" bindtap="intoPath" data-path="/pages/serviesDetalis/serviesDetalis">
-	<image src="../../image/home-img1.png"></image>
-	<view class="box-btm">
-		<view class="color5 font13 ilblock">非诉讼法律事务</view>
-		<view class="font13 ilblock color4 flo-right">会员免费</view>
-	</view>
-</view>
-
-<button class="bg7 color5 font15 radiu15" bindtap="intoPath" data-path="/pages/vip/vip">开通会员</button>
+<button class="bg7 color5 font15 radiu15" bindtap="intoPathRedirect" data-path="/pages/vip/vip">开通会员</button>

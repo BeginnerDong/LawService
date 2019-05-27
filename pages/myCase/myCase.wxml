@@ -1,48 +1,29 @@
-<view class="big-box bg1" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis">
-	<view class="right color8 font11">
-		已解决
+<block wx:for="{{web_mainData}}" wx:key="id">
+	<view class="big-box bg1" >
+		<view class="right color8 font11" wx:if="{{item.transport_status==2}}">
+			已解决
+		</view>
+		<view class="right color4 font11" wx:if="{{item.transport_status==1}}">
+			解决中
+		</view>
+		<view class="right color4 font11" wx:if="{{item.transport_status==0}}">
+			未解决
+		</view>
+		<view class="color1 font14 overflow1" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis?id={{item.id}}">{{item.products[0].snap_product.title}}</view>
+		<view class="color2 font12 text" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis?id={{item.id}}">
+			{{item.description}}
+		</view>
+		<view bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis?id={{item.id}}">
+			<view class="font11 color3">{{item.create_time}}</view>
+		</view>
+		<view class="color1 font12 btm" wx:if="{{item.transport_status==2}}">
+			<button class="bg7 ilblock" style="margin-right:50rpx;" bindtap="deleteOrder" data-id="{{item.id}}">删除服务</button>
+			<button class="bg7 ilblock" wx:if="{{item.products[0].isremark==0}}" bindtap="intoPath" data-path="/pages/reveiewService/reveiewService?id={{item.id}}">评论服务</button>
+		</view>
 	</view>
-	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
-	<view class="color2 font12 text">
-		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-		内容内容内容内容内容内容内容内容内容内容内容内容内容.
-	</view>
-	<view>
-		<view class="font11 color3">2019.06.02</view>
-	</view>
-	<view class="color1 font12 btm">
-		<button class="bg7 ilblock" style="margin-right:50rpx;" bindtap="show">删除服务</button>
-		<button class="bg7 ilblock" bindtap="intoPath" data-path="/pages/reveiewService/reveiewService">评论服务</button>
-	</view>
-</view>
-<view class="big-box bg1" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis">
-	<view class="right color4 font11">
-		未解决
-	</view>
-	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
-	<view class="color2 font12 text">
-		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-		内容内容内容内容内容内容内容内容内容内容内容内容内容.
-	</view>
-	<view>
-		<view class="font11 color3">2019.06.02</view>
-	</view>
-</view>
-<view class="big-box bg1" bindtap="intoPath" data-path="/pages/caseDetalis/caseDetalis">
-	<view class="right color4 font11">
-		解决中
-	</view>
-	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
-	<view class="color2 font12 text">
-		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-		内容内容内容内容内容内容内容内容内容内容内容内容内容.
-	</view>
-	<view>
-		<view class="font11 color3">2019.06.02</view>
-	</view>
-</view>
+</block>
 
-<view class="fixd" wx:if="{{is_show}}">
+<!-- <view class="fixd" wx:if="{{is_show}}">
 	<view class="bg1 fixd-box radiu15">
 		<view>
 			<image class="flo-right" src="../../image/icon2.png" style="width: 36rpx;height: 36rpx" bindtap="show"></image>
@@ -53,4 +34,4 @@
 			<button bindtap="show" >否</button>
 		</view>
 	</view>
-</view>
+</view> -->

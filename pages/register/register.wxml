@@ -1,10 +1,10 @@
 <view class="info bg1">
 	<view class="ilblock color1 font14">姓名：</view>
-	<input class="font12 color3 ilblock info-list" placeholder="请输入姓名"/>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入姓名" data-key="name" bindblur="changeBind"  value="{{web_sForm.name}}"/>
 </view>
 <view class="info bg1">
 	<view class="ilblock color1 font14">手机号：</view>
-	<input class="font12 color3 ilblock info-list" placeholder="请输入绑定的手机号"/>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入绑定的手机号" data-key="phone" bindblur="changeBind"  value="{{web_sForm.phone}}"/>
 </view>
 <view class="info bg1">
 	<view class="ilblock color1 font14">验证码：</view>
@@ -17,10 +17,10 @@
 </view>
 <view class="info bg1">
 	<view class="ilblock color1 font14 list-left">推荐人手机号:</view>
-	<input class="font12 color3 ilblock info-list" placeholder="请输入推荐人的手机号(选填)"/>
+	<input class="font12 color3 ilblock info-list" placeholder="请输入推荐人的手机号(选填)" data-key="passage1" bindblur="changeBind"  value="{{web_sForm.passage1}}"/>
 </view>
 
-<button class="bg7 color5 font15 radiu15">确定</button>
+<button class="bg7 color5 font15 radiu15" open-type="getUserInfo" bindgetuserinfo="{{web_buttonCanClick?'submit':''}}">确定</button>
 <view class="font12 color2" style="text-align: center;" bindtap="show">点击“确认”即表示您同意《注册协议》</view>
 
 <view class="mask" wx:if="{{is_show}}">
@@ -41,30 +41,5 @@
 
 
 
-<view class="navbar">
-	<view class="navbar_item">
-		<view class="nav_img">
-			<image src="../../image/nabar1.png"></image>
-		</view>
-		<view class="text">首页</view>
-	</view>
-	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/submit/submit">
-		<view class="nav_img">
-			<image src="../../image/nabar2-a.png"></image>
-		</view>
-		<view class="text this-text">案件提交</view>
-	</view>
-	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/vip/vip">
-		<view class="nav_img">
-			<image src="../../image/nabar3.png"  style="width: 50rpx;"></image>
-		</view>
-		<view class="text">会员</view>
-	</view>
-	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/user/user">
-		<view class="nav_img">
-			<image src="../../image/nabar4.png" style="width: 44rpx;"></image>
-		</view>
-		<view class="text">我的</view>
-	</view>
-</view>
+
 

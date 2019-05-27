@@ -1,45 +1,55 @@
+//logs.js
 import {Api} from '../../utils/api.js';
 var api = new Api();
 const app = getApp();
 import {Token} from '../../utils/token.js';
 const token = new Token();
 
-//index.js
-//获取应用实例
-//触摸开始的事件
-
 Page({
   data: {
-		 is_show:false,
-		 imgUrls: [
-		   '../../image/banner.png',
-		   '../../image/banner.png',
-		   '../../image/banner.png'
-		 ],
-		 swiperIndex: 0
-   },
-		
-	show(e){
-		const self=this;
-		self.data.is_show=false;
-		self.setData({
-			is_show:self.data.is_show
-		})
-	},
-	onLoad: function (options) {
-	},
-	 swiperChange(e) {
-    this.setData({
-      swiperIndex: e.detail.current
-    })
+    mainData:[],
+    isFirstLoadAllStandard:['getMainData'],
   },
 	
-  intoPathRedirect(e){
+  onLoad() {
     const self = this;
-    api.pathTo(api.getDataSet(e,'path'),'redi');
+		api.commonInit(self);
+    self.getMainData();
   },
-  intoPath(e){
+	
+	getMainData(){
+    const  self =this;
+    const postData={};
+    postData.searchItem = {
+      thirdapp_id:getApp().globalData.thirdapp_id
+    };
+    postData.getBefore = {
+      partner:{
+        tableName:'Label',
+        searchItem:{
+          title:['=',['风险代理']],
+        },
+        middleKey:'menu_id',
+        key:'id',
+        condition:'in',
+      },
+    }
+    const callback =(res)=>{
+      if(res.info.data.length>0){
+        self.data.mainData = res.info.data[0];
+        self.data.mainData.content = api.wxParseReturn(res.info.data[0].content).nodes;
+      }
+      api.checkLoadAll(self.data.isFirstLoadAllStandard,'getMainData',self);
+      self.setData({
+        web_mainData:self.data.mainData,
+      });
+    };
+    api.articleGet(postData,callback);
+  },
+	
+	intoPath(e){
     const self = this;
     api.pathTo(api.getDataSet(e,'path'),'nav');
-  }
-	})
+  },
+
+})

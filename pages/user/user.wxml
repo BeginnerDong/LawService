@@ -16,7 +16,7 @@
 	</view>
 </view>
 
-<view class="info bg1" bindtap="intoPath" data-path="/pages/myVip/myVip">
+<view class="info bg1" bindtap="intoVip" data-path="/pages/myVip/myVip">
 	<view class="ilblock listimg">
 		<image src="../../image/about-icon1.png"></image>
 	</view>

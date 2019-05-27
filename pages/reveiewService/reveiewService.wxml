@@ -1,11 +1,10 @@
 <view class="big-box bg1">
-	<view class="color1 font14 overflow1">标题标题标题标题标题标题标题</view>
+	<view class="color1 font14 overflow1">{{web_mainData.products[0].snap_product.title}}</view>
 	<view class="color2 font12 text">
-		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-		内容内容内容内容内容内容内容内容内容内容内容内容内容.
+		{{web_mainData.description}}
 	</view>
 	<view>
-		<view class="ilblock font11 color3">2019.06.02</view>
+		<view class="ilblock font11 color3">{{web_mainData.create_time}}</view>
 		<view class="other radiu40 color8 font11 ilblock">其他咨询</view>
 	</view>
 </view>
@@ -16,20 +15,18 @@
 			星级评价：
 		</view>
 		<view class="ilblock star">
-			<image src="../../image/evaluation-icon.png"></image>
-			<image src="../../image/evaluation-icon.png"></image>
-			<image src="../../image/evaluation-icon.png"></image>
-			<image src="../../image/evaluation-icon.png"></image>
-			<image src="../../image/evaluation-icon.png"></image>
+			<block wx:for="{{web_stars}}">
+				<image src="{{web_submitData.score>=item?'../../image/evaluation-icon1.png':'../../image/evaluation-icon.png'}}" data-key="phone" data-key="score" bindtap="changeBind" data-value="{{item}}"></image>
+			</block>
 		</view>
 	</view>
 	<view class="color1 font13" style="margin-top: 50rpx;">
 		<view class="ilblock">评价：</view>
 		<view class="ilblock flo-right" style="width: 80%;height: 390rpx;">
-			<textarea class="bg2 color3 font12" value="请输入进想要评价的内容"></textarea>
+			<textarea class="bg2 color3 font12" placeholder="请输入进想要评价的内容" data-key="content" bindblur="changeBind" value="{{web_submitData.content}}"></textarea>
 		</view>
 		<view style="clear: both;"></view>
 	</view>
 </view>
 
-<button class="bg7 color5 font15 radiu15">提交</button>
+<button class="bg7 color5 font15 radiu15" open-type="getUserInfo" bindgetuserinfo="{{web_buttonCanClick?'submit':''}}">提交</button>

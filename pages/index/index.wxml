@@ -1,26 +1,34 @@
 <view class="banner-box">
 	<view class="banner">
-		<swiper indicator-dots="true" indicator-active-color="#F6FAFB" current="{{web_current}}" class="banbox" autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}">
-			<block class="swipera" wx:for="{{arr}}">
+		<swiper indicator-dots="true" indicator-active-color="#F6FAFB" current="{{web_current}}" class="banbox" autoplay="{{autoplay}}"
+		 duration="{{duration}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}">
+			<block class="swipera" wx:for="{{web_sliderData.mainImg}}">
 				<swiper-item>
-					<image src="{{item}}" mode="widthFix" class="banimg"></image>
+					<image src="{{item.url}}" mode="widthFix" class="banimg"></image>
 				</swiper-item>
 			</block>
 		</swiper>
 	</view>
 </view>
-<view class="inform">
-	<image src="../../image/home-icon1.png"></image>
-	<view class="inform-text ilblock color2 font13 overflow1">
-		通知通知通知通知通知通知通知通知
+<view id="marquee" style="display: flex;">
+	<view class="horn">
+		<image src="../../image/home-icon1.png"></image>
 	</view>
+	<view class="marquee_right">
+		<view class="marquee_container" style="--marqueeWidth--:{{marqueeW}};--allTs--:{{allT}};">
+			<view class="marquee_text color2 " style="font-size:{{size}}px;">{{web_sliderData.description}}</view>
+		</view>
+	</view>
+	<!-- 	<view class="inform-text ilblock color2 font13 overflow1" style="--marqueeWidth--:{{marqueeW}};--allTs--:{{allT}};">
+		{{web_sliderData.description}}
+	</view> -->
 </view>
 <view class="bg2 he10"></view>
 <view style="width: 100%;">
-	<view class="circel-nav ilblock" bindtap="intoPath" data-path="/pages/submit/submit">
+	<view class="circel-nav ilblock" bindtap="intoPathRedirect" data-path="/pages/submit/submit">
 		<image src="../../image/home-icon2.png"></image>
 		<view class="color2 font13">
-			在线资讯
+			在线咨询
 		</view>
 	</view>
 	<view class="circel-nav ilblock" bindtap="intoPath" data-path="/pages/phoneCounseling/phoneCounseling">
@@ -72,7 +80,7 @@
 	<view class="color1 font15 fat-font ilblock">风险代理</view>
 </view>
 <view style="width: 100%;height: 300rpx;" bindtap="intoPath" data-path="/pages/dengarAgency/dengarAgency">
-	<image src="../../image/home-img3.png" style="width: 100%; height: 100%;"></image>
+	<image src="{{web_artData.mainImg[0].url}}" style="width: 100%; height: 100%;"></image>
 </view>
 <view class="bg2 he10" style="margin: 50rpx 0rpx 0rpx;"></view>
 <view class="line-img">
@@ -80,72 +88,48 @@
 	<view class="color1 font15 fat-font ilblock">特色服务</view>
 </view>
 <view class="serve-box">
-	<view class="serve ilblock" bindtap="intoPath" data-path="/pages/serviesDetalis/serviesDetalis">
-		<view class="serve-img">
-			<image src="../../image/home-img1.png"></image>
+	<block wx:for="{{web_labelData}}" wx:key="id">
+		<view class="serve ilblock" bindtap="intoPath" data-path="/pages/serviesDetalis/serviesDetalis?id={{item.id}}">
+			<view class="serve-img">
+				<image src="{{item.mainImg[0].url}}"></image>
+			</view>
+			<view class="color1 font13" style="margin-top: 30rpx;">{{item.title}}</view>
+			<view class="color4 font13" style="margin-top: 24rpx;">会员免费</view>
 		</view>
-		<view class="color1 font13" style="margin-top: 30rpx;">法律资讯</view>
-		<view class="color4 font13" style="margin-top: 24rpx;">会员免费</view>
-	</view>
-	<view class="serve ilblock" bindtap="intoPath" data-path="/pages/serviesDetalis/serviesDetalis">
-		<view class="serve-img">
-			<image src="../../image/home-img1.png"></image>
-		</view>
-		<view class="color1 font13" style="margin-top: 30rpx;">非诉讼法律事务</view>
-		<view class="color4 font13" style="margin-top: 24rpx;">会员免费</view>
-	</view>
+	</block>
 </view>
 <view class="bg2 he10"></view>
 <view class="top-two bg1">
-	 <view class="top-item ilblock {{currentData == 0 ? 'top-itemstar' : ''}}"  data-current = "0" bindtap="checkCurrent">
-		 <view class="font15">
-			 招生快讯
-		 </view>
-	 </view><view class="top-item ilblock {{currentData == 1 ? 'top-itemstar' : ''}}"  data-current = "1" bindtap="checkCurrent">
-		 <view class="font15">
-			 招生章程
-		 </view>
-	 </view>
- </view>
-<view class="list-two"  bindtap="intoPath" data-path="/pages/consultDetalis/consultDetalis">
- 	<view class="ilblock list-left">
- 		<view class="font14 coloe1" style="height: 120rpx;">各省高招规定陆续公布 今年各省都有哪些变化</view>
- 		<view class="font10">
- 			<view class="color8 ilblock">婚姻家庭</view>
- 			<view class="color3 flo-right ilblock">2019.06.10</view>
- 		</view>
- 	</view>
- 	<view class="ilblock flo-right">
- 		<image src="../../image/home-img2.png"></image>
- 	</view>
- </view>
-<view class="list-two"  bindtap="intoPath" data-path="/pages/consultDetalis/consultDetalis">
- 	<view class="ilblock list-left">
- 		<view class="font14 coloe1" style="height: 120rpx;">各省高招规定陆续公布 今年各省都有哪些变化</view>
- 		<view class="font10">
- 			<view class="color8 ilblock">婚姻家庭</view>
- 			<view class="color3 flo-right ilblock">2019.06.10</view>
- 		</view>
- 	</view>
- 	<view class="ilblock flo-right">
- 		<image src="../../image/home-img2.png"></image>
- 	</view>
- </view>
-<view class="list-two"  bindtap="intoPath" data-path="/pages/consultDetalis/consultDetalis">
- 	<view class="ilblock list-left">
- 		<view class="font14 coloe1" style="height: 120rpx;">各省高招规定陆续公布 今年各省都有哪些变化</view>
-		<view class="font10">
-			<view class="color8 ilblock">婚姻家庭</view>
-			<view class="color3 flo-right ilblock">2019.06.10</view>
+	<view class="top-item ilblock {{currentData == 0 ? 'top-itemstar' : ''}}" data-current="0" bindtap="checkCurrent">
+		<view class="font15">
+			热点资讯
 		</view>
- 	</view>
- 	<view class="ilblock flo-right">
- 		<image src="../../image/home-img2.png"></image>
- 	</view>
- </view>
- <view class="font12 color8" style="text-align: center; padding: 30rpx 0rpx;">
-	 加载更多<image src="../../image/home-icon11.png" style="width: 20rpx;height: 12rpx;margin-left:20rpx;position: relative;top: -4rpx;"></image>
- </view>
+	</view>
+	<view class="top-item ilblock {{currentData == 1 ? 'top-itemstar' : ''}}" data-current="1" bindtap="checkCurrent">
+		<view class="font15">
+			企业动态
+		</view>
+	</view>
+</view>
+<block wx:for="{{web_mainData}}" wx:key="id">
+	<view class="list-two" bindtap="intoPath" data-path="/pages/consultDetalis/consultDetalis?id={{item.id}}">
+		<view class="ilblock list-left">
+			<view class="font14 coloe1" style="height: 120rpx;">{{item.title}}</view>
+			<view class="font10">
+				<view class="color8 ilblock">{{item.description}}</view>
+				<view class="color3 flo-right ilblock">{{item.create_time}}</view>
+			</view>
+		</view>
+		<view class="ilblock flo-right">
+			<image src="{{item.mainImg[0].url}}"></image>
+		</view>
+	</view>
+</block>
+
+
+<view class="font12 color8" style="text-align: center; padding: 30rpx 0rpx;">
+	{{text}}<image src="../../image/home-icon11.png" style="width: 20rpx;height: 12rpx;margin-left:20rpx;position: relative;top: -4rpx;"></image>
+</view>
 <view style="width: 100%;height: 120rpx;"></view>
 
 <view class="navbar">
@@ -163,7 +147,7 @@
 	</view>
 	<view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/vip/vip">
 		<view class="nav_img">
-			<image src="../../image/nabar3.png"  style="width: 50rpx;"></image>
+			<image src="../../image/nabar3.png" style="width: 50rpx;"></image>
 		</view>
 		<view class="text">会员</view>
 	</view>
@@ -174,4 +158,3 @@
 		<view class="text">我的</view>
 	</view>
 </view>
-

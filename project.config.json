@@ -13,9 +13,11 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.6",
-	"appid": "wxdd868581ee40a421",
+	"appid": "wx49c6cdaf2c0b06d1",
 	"projectname": "LawService",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

@@ -1,25 +1,20 @@
 <view class="top">
-	<image src="../../image/members-imgt.png"></image>
+	<image src="{{web_mainData.products[0].snap_product.mainImg[0].url}}"></image>
 </view>
 
 <view style="box-sizing: border-box;padding: 0rpx 4%; text-align: justify;">
 	<view class="color1 font15 fat-font" style="margin: 30rpx 0rpx;">服务说明</view>
 	<view class="color2 font13" style="margin-bottom: 20rpx;">
-		1、内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		<view class="content ql-editor">
+		    <import src="../../wxParse/wxParse.wxml"/>
+		    <template is="wxParse" data="{{wxParseData:web_mainData.products[0].snap_product.content}}"/>
+		</view>
 	</view>
-	<view class="color2 font13" style="margin-bottom: 20rpx;">
-		2、内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-	</view>
-	<view class="color2 font13" style="margin-bottom: 20rpx;">
-		3、内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-	</view>
-	<view class="color2 font13" style="margin-bottom: 20rpx;">
-		4、内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-	</view>
+
 </view>
 <view class="color5 font15">
-	<button class="bg7 ilblock">升级</button>
-	<button class="bg7 ilblock">续费</button>
+	<button class="bg7 ilblock" bindtap="{{web_buttonCanClick?'submit':''}}" data-type="shengji">升级</button>
+	<button class="bg7 ilblock" bindtap="{{web_buttonCanClick?'submit':''}}" data-type="xufei">续费</button>
 </view>
 
 

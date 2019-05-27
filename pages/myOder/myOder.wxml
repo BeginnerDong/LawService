@@ -1,43 +1,49 @@
 <view class="top-two bg1">
-	 <view class="top-item ilblock {{currentData == 0 ? 'top-itemstar' : ''}}"  data-current = "0" bindtap="checkCurrent" >
-		 <view class="font15">
-			 未支付
-		 </view>
-	 </view>
-	 <view class="top-item ilblock {{currentData == 1 ? 'top-itemstar' : ''}}"  data-current = "1" bindtap="checkCurrent" >
-		 <view class="font15">
-			 已支付
-		 </view>
-	 </view>
-	 <view class="top-item ilblock {{currentData == 2 ? 'top-itemstar' : ''}}"  data-current = "2" bindtap="checkCurrent" >
-	 		 <view class="font15">
-	 			 已完成
-	 		 </view>
-	 </view>
- </view>
- <view class="big-box bg1" wx:for="{{currentData}}" bindchange="bindchange">
-	<view class="box-top">
-		<view class="ilblock top-left">
-			<image src="../../image/home-img1.png"></image>
-		</view><view class="ilblock top-right">
-			<view class="color1 font13">法律咨询</view>
-			<view class="overflow2 color2 font12" style="margin:10rpx 0rpx;">
-				内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	<view class="top-item ilblock {{num == 0 ? 'top-itemstar' : ''}}" data-num="0" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+		<view class="font15">
+			未支付
+		</view>
+	</view>
+	<view class="top-item ilblock {{num == 1 ? 'top-itemstar' : ''}}" data-num="1" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+		<view class="font15">
+			已支付
+		</view>
+	</view>
+	<view class="top-item ilblock {{num == 2 ? 'top-itemstar' : ''}}" data-num="2" bindtap="{{web_buttonCanClick?'menuClick':''}}">
+		<view class="font15">
+			已完成
+		</view>
+	</view>
+</view>
+<block wx:for="{{web_mainData}}" wx:key="id" wx:for-index="index">
+	<view class="big-box bg1">
+		<view class="box-top">
+			<view class="ilblock top-left">
+				<image src="{{item.products[0].snap_product.label[item.products[0].snap_product.category_id].mainImg[0].url}}"></image>
 			</view>
-			<view class="font13 color4">
-				会员免费
+			<view class="ilblock top-right">
+				<view class="color1 font13">{{item.products[0].snap_product.label[item.products[0].snap_product.category_id].title}}</view>
+				<view class="overflow2 color2 font12" style="margin:10rpx 0rpx;">
+					{{item.products[0].snap_product.label[item.products[0].snap_product.category_id].description}}
+				</view>
+				<view class="font13 color4">
+					会员免费
+				</view>
 			</view>
 		</view>
-	</view> 
-	<view class="middle">
-		<view class="color2 font11">不涉及财产关系100元/小时；(不足1小时按一小时计算)</view>
-		<view class="color4 font13" style="margin-top: 12rpx;">￥56.00</view>
-	</view>
-	<view class="btm-box">
-		<view class="pay color1 font14 radiu40 flo-right ilblock">
-			去支付
+		<block wx:for="{{item.products}}" wx:key="id" wx:for-item="c_item">
+			<view class="middle">
+				<view class="color2 font11">{{c_item.snap_product.title}}</view>
+				<view class="color4 font13" style="margin-top: 12rpx;">￥{{c_item.snap_product.price}}</view>
+			</view>
+		</block>
+		<view class="btm-box">
+			<view class="pay color1 font14 radiu40 flo-right ilblock" bindtap="pay" data-index="{{index}}" wx:if="{{item.pay_status==0}}">
+				去支付
+			</view>
+			<view class="font14 color4 ilblock flo-right" style="margin-top:12rpx">总金额：￥{{item.price}}</view>
+			<view style="clear: both;"></view>
 		</view>
-		<view class="font14 color4 ilblock flo-right" style="margin-top:12rpx">总金额：￥56.00</view>
-		<view style="clear: both;"></view>
 	</view>
- </view>
+
+</block>
